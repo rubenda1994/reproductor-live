@@ -1,0 +1,55 @@
+* { box-sizing: border-box; }
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player {
+    border-radius: 0 0 .3rem .3rem;
+    background-color: gray;
+    box-shadow: 2px 2px 1rem black;
+    max-width: 1280px;
+    min-width: 320px;
+}
+
+.video {
+    width: 100%;
+    cursor: pointer;
+}
+
+.controls {
+    padding: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.controls > * {
+    cursor: pointer;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+}
+
+.button i{
+    font-size: 1rem;
+}
+
+.progress{
+    flex-grow: 1;
+}
+
+.timestamp{
+    font-size: 1.2rem;
+} 
